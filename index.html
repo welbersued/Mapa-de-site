@@ -3,21 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Wireframe</title>
+    <title>Compra Insegura</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
-        .container { max-width: 1200px; margin: auto; }
-        header, footer { background: #ddd; padding: 15px; text-align: center; }
-        nav ul { display: flex; justify-content: space-around; list-style: none; padding: 0; }
-        nav ul li { padding: 10px; background: #f4a261; margin: 5px; }
-        nav ul li a { text-decoration: none; color: black; }
-        .section { padding: 20px; border-bottom: 1px solid #ccc; }
+        body { 
+            font-family: 'Arial', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: #f5f5f5;
+            color: #333;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: auto; 
+            padding: 20px;
+        }
+        header, footer { 
+            background: #2a9d8f; 
+            color: white; 
+            padding: 15px; 
+            text-align: center; 
+            border-radius: 10px;
+        }
+        header h1 {
+            font-style: italic; 
+        }
+        nav ul { 
+            display: flex; 
+            justify-content: center; 
+            list-style: none; 
+            padding: 0;
+            background: #264653;
+            border-radius: 10px;
+        }
+        nav ul li { 
+            padding: 15px; 
+            margin: 5px; 
+        }
+        nav ul li a { 
+            text-decoration: none; 
+            color: white; 
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #e9c46a;
+        }
+        .section { 
+            padding: 20px; 
+            border-radius: 10px; 
+            background: white;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .mapa-site {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #2a9d8f;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+            margin-top: 15px;
+        }
+        .mapa-site:hover {
+            background: #21867a;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>E-Commerce</h1>
+            <h1>Compra Insegura</h1>
         </header>
         
         <nav>
@@ -30,16 +97,22 @@
         </nav>
         
         <section class="section">
-            <h2>Bem-vindo ao E-Commerce</h2>
-            <p>Escolha uma seção no menu para navegar.</p>
+            <h2>Bem-vindo ao nosso E-Commerce</h2>
+            
+            <p>Escolha uma seção no menu para navegar! Este modelo foi criado para mostrar na prática como um mapa de site pode ser aplicado. <br>
+            Esta atividade foi realizada pelos alunos Welber Sued e Samuel. Espero que tenha gostado do resultado final!</p>
+            <br>
+            <h2> Para conferir como foi feito o mapa deste site, clique no botão abaixo: </h2>
+            
+            <a href="mapa.html" class="mapa-site">📌 Mapa de Site</a>
         </section>
         
         <footer>
             <p>Veja também</p>
             <ul>
-                <li>Termos e Condições</li>
-                <li>Infos</li>
-                <li>Links para Redes Sociais</li>
+                <li><a href="termos.html">Termos e Condições</a></li>
+                <li><a href="infos.html">Infos</a></li>
+                <li><a href="redes.html">Onde Me Encontrar</a></li>
             </ul>
         </footer>
     </div>
